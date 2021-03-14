@@ -10,7 +10,7 @@ var initalState = [
     rating: 4,
   },
   {
-    id: 1,
+    id: 2,
     name: "iphone 7s",
     img:
       "https://cdn.tgdd.vn/Products/Images/42/87837/iphone-7-den-new-600x600-200x200.jpg",
@@ -20,7 +20,7 @@ var initalState = [
     rating: 3,
   },
   {
-    id: 1,
+    id: 3,
     name: "iphone 8s",
     img:
       "https://cdn1.viettelstore.vn/images/Product/ProductImage/medium/1115679429.jpeg",
@@ -30,7 +30,7 @@ var initalState = [
     rating: 1,
   },
   {
-    id: 1,
+    id: 4,
     name: "iphone xs",
     img:
       "https://product.hstatic.net/1000329106/product/iphone_x_black_bb614886188d44aaa7feda122848666e_master.jpg",

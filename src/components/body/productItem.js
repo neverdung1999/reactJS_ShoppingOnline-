@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import * as Message from "../../redux/constants/message";
 export default class product extends Component {
   render() {
     var { product } = this.props;
@@ -31,6 +31,7 @@ export default class product extends Component {
                   data-placement="top"
                   title=""
                   data-original-title="Add to Cart"
+                  onClick={() => this.actAddtoCart(product)}
                 >
                   <i className="fa fa-shopping-cart"></i>
                 </a>
@@ -41,6 +42,11 @@ export default class product extends Component {
       </div>
     );
   }
+
+  actAddtoCart = (product) => {
+    this.props.onAddtoCart(product);
+    this.props.onMessageChange(Message.MSG_ADD_TO_CART_SUCCESS);
+  };
 
   showRatings(rating) {
     var results = [];

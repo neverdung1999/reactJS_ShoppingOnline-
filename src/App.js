@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Header from './components/header/header'
 import ProductContainer from "./redux/containers/productContainer";
 import Footer from './components/footer/footer'
-import Message from "./components/body/message";
+import MessageContainer from "./redux/containers/messageContainer";
 import CartContainer from "./redux/containers/cartContainer";
 export default class App extends Component {
     render() {
@@ -13,7 +13,7 @@ export default class App extends Component {
               <main id="mainContainer">
                 <div className="container">
                   <ProductContainer />
-                  <Message />
+                  <MessageContainer />
                   <CartContainer />
                 </div>
               </main>
